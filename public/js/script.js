@@ -1,7 +1,7 @@
 $(function () {
   var url = 'https://api.themoviedb.org/3/movie/popular?api_key=83ebcfbe2592e4358658da3522dad3ff'
 
-  var basePosterUrl = 'http://image.tmdb.org/t/p/w185'
+  var basePosterUrl = 'https://image.tmdb.org/t/p/w185'
 
   $.get(url, function (data) {
     console.log(data.results)
