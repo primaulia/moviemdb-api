@@ -1,0 +1,15 @@
+.four {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.four p, .four h2 {
+  text-align: left;
+}
+
+.columns {
+  float: none;
+}
