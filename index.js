@@ -9,7 +9,7 @@ app.get('/', (req, res) => {
   res.render('home')
 })
 
-var port = 4000
+var port = process.env.PORT || 4000
 app.listen(port, function () {
   console.log('app is running on ' + port)
 })
