@@ -10,7 +10,23 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 app.get('/', (req, res) => {
-  res.render('home')
+  res.render('home-ajax')
+})
+
+app.get('/moviedb', (req, res) => {
+  var url = 'https://api.themoviedb.org/3/movie/popular?api_key=83ebcfbe2592e4358658da3522dad3ff'
+  var baseUrl = 'https://image.tmdb.org/t/p/w185'
+
+  unirest.get(url).end(function (output) {
+    var movies = output.body.results
+
+    res.render('home', {
+      movies: movies,
+      baseUrl: baseUrl
+    })
+  })
+
+  // res.render('home')
 })
 
 app.get('/yoda', (req, res) => {
@@ -38,7 +54,6 @@ app.get('/yoda', (req, res) => {
       })
     })
   })
-
   // These code snippets use an open-source library.
 })
 

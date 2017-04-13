@@ -12,17 +12,7 @@
     <div class="container movie-list">
       <h1>The Movie DB API Test</h1>
       <div class="row">
-        <% movies.forEach(function(movie) {%>
-        <div class="one-third column">
-          <h2><%= movie.title %></h2>
-          <p>
-            <%= movie.overview %>
-          </p>
-          <img src="<%= baseUrl + movie.poster_path %>"/>
-          <br>
-          <button>Add Review</button>
-        </div>
-        <% }) %>
+        
       </div>
     </div>
 
@@ -30,6 +20,6 @@
     src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
-    <%# <script src="js/script.js" charset="utf-8"></script>%>
+    <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
