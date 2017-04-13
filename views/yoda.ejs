@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Movie DB API Test</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <!-- .container is main centered wrapper -->
+    <div class="container">
+      <%# Change this %>
+      <br>
+      <form class="" action="" method="post">
+        <select name="select">
+          <option value="value1" selected>Famous</option>
+          <option value="value2">Movie</option>
+        </select>
+
+        <button type="submit" name="button">Change Quote</button>
+      </form>
+
+      <h2>Original quote</h2>
+      <%- quote %>
+
+      <h2>Yoda speak like this</h2>
+      <%- yoda %>
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!--script src="js/script.js" charset="utf-8"></script=-->
+  </body>
+</html>
